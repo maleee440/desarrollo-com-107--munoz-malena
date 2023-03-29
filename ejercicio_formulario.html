@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" >
+  <meta name="description" content="Formulario" >
+  <title>Ejercicio de Formulario</title>
+  
+</head>
+<body>
+
+  <form method="post" action="" name="form1" id="id_formulario1" >
+    
+    <h3>Datos del Formulario</h3>
+
+    <!-- elementos input / campos de texto -->
+    <label for="id_apellido">Apellido</label>
+    <input type="text" name="apellido" id="id_apellido" value="">
+
+    <label for="id_nombre">Nombre</label>
+    <input type="text" name="nombre" id="id_nombre" value="">
+
+    <label for="id_edad">Edad</label>
+    <input type="text" name="edad" id="id_edad" value="">
+
+    <br>
+    <!-- elementos radio / casillas de opción -->
+    <input type="radio" name="rango_edad" value="menor_18">
+    <label>Menor de 18</label>
+    <input type="radio" name="rango_edad" value="mayor_18">
+    <label>Mayor de 18</label>
+
+    <br>
+    <!-- elementos checkbox / casillas de verificación -->
+
+    <input type="checkbox" name="extras[]" value="auto">
+    <label>Auto</label>
+    <input type="checkbox" name="extras[]" value="camioneta">
+    <label>Camioneta</label>
+    <input type="checkbox" name="extras[]" value="camion">
+    <label>Camion</label>
+
+    <br><br>
+
+    <!-- combo simple -->
+    <label>Sexo:</label>
+    <select name="sexo" id="id_sexo">
+        <option value="femenino" >Femenino</option>
+        <option value="masculino" >Masculino</option>        
+
+    </select>
+    
+    <br><br>
+    <label>Idiomas:</label>
+    <!-- combo multiple -->
+    <select name="combo_idiomas" id="id_combo_idiomas" multiple>
+      <option value="1" >Inglés</option>
+      <option value="2" >Francés</option>
+      <option value="3" >Alemán</option>
+      <option value="4" >Holandés</option>
+    </select>
+    <br><br>
+    <label>Comentario:</label>
+    <textarea name="comentario" rows="4" cols="15">
+        
+    </textarea>
+
+    <br><br>
+    
+    <br>
+    <input type="submit" name="botonEnviarDatos" id="id_enviar" value="Enviar" >
+
+    <input type="submit" name="botonEliminarDatos" id="id_eliminar" value="Eliminar Datos" >
+
+  </form>
+   
+    
+</body>
+</html>
